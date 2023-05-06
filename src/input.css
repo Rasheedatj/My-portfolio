@@ -5,8 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,700&display=swap');
 
 body {
-  overflow-x: hidden !important;
   font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 146, 176, 0.3);
+  border-radius: 2rem;
 }
 
 .hamBtn.open span:nth-child(1) {
@@ -24,7 +34,6 @@ body {
 }
 
 .menu.open {
-  /* display: block; */
   transform: translateX(0);
 }
 
@@ -39,19 +48,13 @@ small {
   word-spacing: 5px;
 }
 
-/* .clip {
-  clip-path: polygon(
-    50% 0%,
-    91% 26%,
-    91% 72%,
-    53% 100%,
-    49% 100%,
-    11% 72%,
-    11% 27%
-  );
-  border: 2px solid red;
-  background: #000;
-  width: 5rem;
-  height: 5rem;
-  display: block;
-} */
+.stack ul li {
+  position: relative;
+}
+
+.stack ul li::before {
+  content: '▹';
+  position: absolute;
+  color: #fcdb56;
+  left: -20px;
+}

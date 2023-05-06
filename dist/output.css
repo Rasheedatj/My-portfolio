@@ -589,6 +589,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[1\.5rem\] {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -666,6 +670,10 @@ video {
   place-items: center;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -702,8 +710,12 @@ video {
   gap: 2rem;
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.gap-\[3rem\] {
+  gap: 3rem;
+}
+
+.gap-\[\.5rem\] {
+  gap: .5rem;
 }
 
 .rounded-\[5px\] {
@@ -772,6 +784,10 @@ video {
   padding-right: 50px;
 }
 
+.pb-\[4rem\] {
+  padding-bottom: 4rem;
+}
+
 .pt-\[\.5rem\] {
   padding-top: .5rem;
 }
@@ -790,6 +806,18 @@ video {
 
 .pl-\[10px\] {
   padding-left: 10px;
+}
+
+.pt-\[1\.5rem\] {
+  padding-top: 1.5rem;
+}
+
+.pt-\[2rem\] {
+  padding-top: 2rem;
+}
+
+.pl-\[20px\] {
+  padding-left: 20px;
 }
 
 .text-\[2rem\] {
@@ -812,8 +840,16 @@ video {
   font-weight: 600;
 }
 
+.font-\[100\] {
+  font-weight: 100;
+}
+
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-\[35px\] {
+  line-height: 35px;
 }
 
 .text-\[\#FCDB56\] {
@@ -863,8 +899,20 @@ video {
 }
 
 body {
-  overflow-x: hidden !important;
   font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 146, 176, 0.3);
+  border-radius: 2rem;
 }
 
 .hamBtn.open span:nth-child(1) {
@@ -884,7 +932,6 @@ body {
 }
 
 .menu.open {
-  /* display: block; */
   transform: translateX(0);
 }
 
@@ -900,22 +947,16 @@ small {
   word-spacing: 5px;
 }
 
-/* .clip {
-  clip-path: polygon(
-    50% 0%,
-    91% 26%,
-    91% 72%,
-    53% 100%,
-    49% 100%,
-    11% 72%,
-    11% 27%
-  );
-  border: 2px solid red;
-  background: #000;
-  width: 5rem;
-  height: 5rem;
-  display: block;
-} */
+.stack ul li {
+  position: relative;
+}
+
+.stack ul li::before {
+  content: '▹';
+  position: absolute;
+  color: #fcdb56;
+  left: -20px;
+}
 
 .hover\:-translate-x-2:hover {
   --tw-translate-x: -0.5rem;
@@ -940,6 +981,10 @@ small {
 @media (min-width: 768px) {
   .md\:mt-\[5rem\] {
     margin-top: 5rem;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:text-\[75px\] {
@@ -968,6 +1013,14 @@ small {
     width: 50%;
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -983,5 +1036,9 @@ small {
 
   .lg\:text-\[50px\] {
     font-size: 50px;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
   }
 }
