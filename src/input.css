@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,700&display=swap');
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7em;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -57,4 +63,9 @@ small {
   position: absolute;
   color: #fcdb56;
   left: -20px;
+}
+
+.back_to_top.active {
+  display: grid;
+  bottom: 2rem;
 }

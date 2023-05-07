@@ -1,4 +1,6 @@
 const hello = document.querySelector('.mode_switch');
+const backToTop = document.querySelector('.back_to_top');
+
 hello.addEventListener('click', () => {
   document.querySelector('html').classList.toggle('dark');
 
@@ -25,10 +27,12 @@ hamburgerBtn.addEventListener('click', (e) => {
 
 window.onscroll = () => {
   header.classList.add('active');
+  backToTop.classList.add('active');
 };
 
 window.addEventListener('scroll', function () {
   if (document.documentElement.scrollTop === 0) {
     header.classList.remove('active');
+    backToTop.classList.remove('active');
   }
 });

@@ -589,8 +589,24 @@ video {
   bottom: 0px;
 }
 
+.bottom-\[-2rem\] {
+  bottom: -2rem;
+}
+
+.right-\[2rem\] {
+  right: 2rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-\[10\] {
+  z-index: 10;
+}
+
+.z-\[100\] {
+  z-index: 100;
 }
 
 .mt-\[2rem\] {
@@ -629,6 +645,10 @@ video {
   height: 2px;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -663,6 +683,11 @@ video {
 
 .-translate-x-\[100\%\] {
   --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[100\%\] {
+  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -724,6 +749,10 @@ video {
 
 .gap-\[\.5rem\] {
   gap: .5rem;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-\[5px\] {
@@ -902,12 +931,26 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7em;
 }
 
 body {
@@ -968,6 +1011,11 @@ small {
   position: absolute;
   color: #fcdb56;
   left: -20px;
+}
+
+.back_to_top.active {
+  display: grid;
+  bottom: 2rem;
 }
 
 .hover\:-translate-x-2:hover {
