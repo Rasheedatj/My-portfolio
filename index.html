@@ -12,9 +12,8 @@
   </head>
   <body class="bg-[#0a192f] dark:bg-[#eee] w-[100%] px-[2rem]">
     <!-- ### HEADER #### -->
-
     <header
-      class="flex justify-between py-[1.5rem] lg:justify-start items-center w-[100%] fixed top-0 right-0 left-0 px-[2rem] bg-[#0a192f] opacity-[.8]"
+      class="flex justify-between py-[1.5rem] lg:justify-start items-center w-[100%] fixed top-0 right-0 left-0 px-[2rem] bg-[#0a192f] z-[100] dark:opacity-[.7] dark:bg-[#eee] backdrop-blur-md"
     >
       <div class="w-[43%]">
         <a
@@ -85,6 +84,7 @@
         <span class="w-[20px] h-[2px] rounded-[5px] bg-[#FCDB56]"></span>
       </div>
     </header>
+
     <!-- ### HAMBURGER MENU ### -->
     <section
       class="block lg:hidden -translate-x-[100%] duration-500 transition-transform backdrop-blur-md shadow-[#112240] shadow-[-10px 0px 30px -15px] inset-0 absolute menu z-[10]"
@@ -136,6 +136,12 @@
           consectetur adipisicing elit. Porro ex delectus eaque? Corrupti,
           voluptatem officia.
         </p>
+
+        <a
+          href="mailto:https://mail.google.com/jinaduikeoluwa@gmail.com"
+          class="border-[#FCDB56] text-[#FCDB56] rounded-[6px] border-[2px] w-[40%] md:w-[20%] lg:w-[15%] py-[.8rem] mt-[2.3rem] grid place-items-center hover:-translate-x-2 hover:-translate-y-2 duration-300 transition-all resume"
+          >Get in Touch</a
+        >
       </section>
 
       <!-- #### ABOUT ME  ### -->
@@ -188,7 +194,7 @@
             </div>
           </div>
 
-          <div class="w-[100%] md:w-[50%]">
+          <div class="w-[100%] md:w-[50%] relative add_film">
             <img src="../Piggyvest/src/images/aboutus.png" alt="" />
           </div>
         </div>
@@ -211,6 +217,39 @@
     >
       <span class="material-symbols-outlined"> keyboard_arrow_up </span>
     </a>
+
+    <!-- #### Socials ## -->
+
+    <section class="fixed left-[2rem] bottom-[7rem] flex flex-col social">
+      <a
+        href="https://github.com/Rasheedatj"
+        class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+      >
+        <img
+          src="./src/Images/github.svg"
+          alt="github"
+          class="text-[red] fill-[#ccd6f6] w-[20px] h-[20px]"
+        />
+        git
+      </a>
+      <a
+        href="https://twitter.com/Rasheedatj"
+        class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+      >
+        <img src="./src/Images/twitter.svg" alt="twitter" />
+        git
+      </a>
+      <a
+        href=""
+        class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+      >
+        <img src="./src/Images/linkedin.svg" alt="linkedin" />
+        git
+      </a>
+      <span
+        class="fixed left-[2.3rem] bottom-0 bg-[#ccd6f6] w-[2px] h-[110px]"
+      ></span>
+    </section>
 
     <script src="./src/app.js"></script>
   </body>
