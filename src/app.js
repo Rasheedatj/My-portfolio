@@ -1,6 +1,6 @@
 const hello = document.querySelector('.mode_switch');
 const backToTop = document.querySelector('.back_to_top');
-
+// const close = document.querySelector('.close');
 hello.addEventListener('click', () => {
   document.querySelector('html').classList.toggle('dark');
 
@@ -24,6 +24,10 @@ hamburgerBtn.addEventListener('click', (e) => {
   hamburgerBtn.classList.toggle('open');
   menu.classList.toggle('open');
 });
+
+// close.addEventListener('click', (e) => {
+//   menu.classList.remove('open');
+// });
 
 window.onscroll = () => {
   header.classList.add('active');
