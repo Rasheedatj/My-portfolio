@@ -120,10 +120,14 @@ small {
   top: 4.5rem;
 }
 
-@media screen and (max-width: 600) {
-  .counter {
-    counter-reset: removeCounter;
-    /* padding-left: 2rem; */
-    background-color: red;
+@media screen and (max-width: 600px) {
+  .counter > section::before {
+    content: '';
+    color: #f5f5f5;
+    color: #b6cff5;
+    color: #afeeee;
+    color: #f5b7b1;
+    color: #c0c0c0;
+    color: #514949d9;
   }
 }
