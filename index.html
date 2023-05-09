@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth scroll-py-[7rem] overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
     />
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#0a192f] dark:bg-[#fffdf5] w-[100%] px-[2rem]">
+  <body class="bg-[#0a192f] dark:bg-[#fffdf5] w-[100%] px-[2rem] pb-[3rem]">
     <!-- ### HEADER #### -->
     <header
       class="flex justify-between py-[1.5rem] lg:justify-start items-center w-[100%] fixed top-0 right-0 left-0 px-[2rem] bg-[#0a192f] z-[10] dark:opacity-[.7] dark:bg-[#FFFAFA] backdrop-blur-md"
@@ -89,7 +89,7 @@
 
     <!-- ### HAMBURGER MENU ### -->
     <section
-      class="block lg:hidden -translate-x-[100%] duration-500 transition-transform backdrop-blur-md shadow-[#112240] shadow-[-10px 0px 30px -15px] inset-0 absolute menu z-[10]"
+      class="block lg:hidden -translate-x-[100%] duration-500 transition-transform backdrop-blur-md shadow-[#112240] shadow-[-10px 0px 30px -15px] inset-0 fixed z-[10] menu"
     >
       <div
         class="flex flex-col gap-[2rem] items-center justify-center w-[70%] bg-[#112240] left-0 top-0 bottom-0 absolute"
@@ -210,7 +210,7 @@
             </div>
 
             <div class="w-[100%] md:w-[50%] relative add_film">
-              <img src="../Piggyvest/src/images/aboutus.png" alt="" />
+              <img src="./src/images/aboutus.png" alt="" />
             </div>
           </div>
         </section>
@@ -241,12 +241,17 @@
           <!-- project 1 -->
           <section class="flex items-center mt-[3rem]">
             <!-- img -->
-            <div class="hidden md:block lg:w-[50%] project_img relative">
+
+            <a
+              href="https://rasheedatj.github.io/Piggyvest/"
+              class="hidden lg:block lg:w-[50%] project_img relative"
+            >
               <img
                 src="./src/Images/24cd8242-0f1f-4fac-a64d-2f009e86ea73.png"
                 alt=""
               />
-            </div>
+            </a>
+
             <!-- project description -->
             <div
               class="lg:w-[50%] lg:pr-[3rem] bg-[#112240] lg:bg-transparent p-[1.5rem] lg:p-0 rounded-[5px] description"
@@ -318,9 +323,12 @@
           <!-- project 2 -->
           <section class="flex flex-row-reverse items-center mt-[5rem]">
             <!-- img -->
-            <div class="hidden md:block lg:w-[50%] project_img relative">
+            <a
+              href="https://godzinu.com"
+              class="hidden lg:block lg:w-[50%] project_img relative"
+            >
               <img src="./src/Images/godzinu.png" alt="" />
-            </div>
+            </a>
             <!-- project description -->
             <div
               class="lg:w-[50%] lg:pr-[3rem] bg-[#112240] lg:bg-transparent p-[1.5rem] lg:p-0 rounded-[5px] description"
@@ -388,9 +396,12 @@
           <!-- project 3 -->
           <section class="flex items-center mt-[3rem]">
             <!-- img -->
-            <div class="hidden md:block lg:w-[50%] project_img relative">
+            <a
+              href="https://rasheedatj.github.io/Zuri-Clone/"
+              class="hidden lg:block lg:w-[50%] project_img relative"
+            >
               <img src="./src/Images/zuri.png" alt="" />
-            </div>
+            </a>
             <!-- project description -->
             <div
               class="lg:w-[50%] lg:pr-[3rem] bg-[#112240] lg:bg-transparent p-[1.5rem] lg:p-0 rounded-[5px] description"
@@ -732,6 +743,12 @@
         </section>
       </section>
     </section>
+
+    <footer class="flex justify-center items-center mt-[5rem]">
+      <p class="text-[#a8b2d1] font-[200] tracking-[2px]">
+        Designed by Brittany Chiang and built by Rashedat Jinadu
+      </p>
+    </footer>
 
     <!-- ### back to top button ### -->
     <a
