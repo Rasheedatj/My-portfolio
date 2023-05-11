@@ -1045,6 +1045,14 @@ video {
   font-size: 20px;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
+}
+
 .font-\[700\] {
   font-weight: 700;
 }
