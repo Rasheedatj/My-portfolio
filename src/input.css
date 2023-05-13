@@ -46,8 +46,15 @@ body {
 header.active {
   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.5);
 }
+
+.dark header.active {
+  box-shadow: 0 10px 30px -10px #ced3da;
+}
 .resume:hover {
   box-shadow: 5px 5px 0 #fcdb56;
+}
+.dark .resume:hover {
+  box-shadow: 5px 5px 0 #b63f3f;
 }
 
 small {
@@ -63,6 +70,10 @@ small {
   position: absolute;
   color: #fcdb56;
   left: -20px;
+}
+
+.dark .stack ul li::before {
+  color: #b63f3f;
 }
 
 .back_to_top.active {
@@ -81,6 +92,11 @@ small {
   border-radius: 20px;
   transition: all 400ms ease;
 }
+
+.dark .add_film::after,
+.dark .project_img::after {
+  background-color: #c07373;
+}
 .project_img::after {
   border-radius: 0;
 }
@@ -94,17 +110,21 @@ small {
   transform: translate(15px, 15px);
 }
 
+.dark .add_film::before {
+  border: 2px solid #b63f3f;
+}
+
 .add_film:hover::after,
 .project_img:hover::after {
   opacity: 0;
   cursor: pointer;
 }
 
-.counter {
+/* .counter {
   counter-reset: myCounter;
-}
+} */
 
-.counter > section::before {
+/* .counter > section::before {
   content: counter(myCounter) '.';
   counter-increment: myCounter;
   position: absolute;
@@ -119,8 +139,16 @@ small {
   top: 4.5rem;
 }
 
+.dark .counter > section::before {
+  color: #b63f3f;
+} */
+
+.dark .other {
+  box-shadow: 0 0px 10px rgba(231, 51, 43, 0.2);
+}
+
 @media screen and (max-width: 800px) {
-  .counter > section::before {
+  /* .counter > section::before {
     content: '';
     color: #f5f5f5;
     color: #b6cff5;
@@ -128,5 +156,5 @@ small {
     color: #f5b7b1;
     color: #c0c0c0;
     color: #514949d9;
-  }
+  } */
 }
