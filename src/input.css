@@ -25,6 +25,11 @@ body {
   border-radius: 2rem;
 }
 
+.dark ::-webkit-scrollbar-thumb {
+  background: #ccd6f6;
+  border-radius: 2rem;
+}
+
 .hamBtn.open span:nth-child(1) {
   transform: rotate(-45deg);
   transition: 300ms ease;
