@@ -53,7 +53,7 @@ header.active {
 }
 
 .dark header.active {
-  box-shadow: 0 10px 30px -10px #ced3da;
+  box-shadow: 0 10px 30px -10px #eee;
 }
 .resume:hover {
   box-shadow: 5px 5px 0 #fcdb56;
