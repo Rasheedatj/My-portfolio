@@ -4,12 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,700&display=swap');
 
-/* html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7em;
-} */
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -92,7 +86,7 @@ small {
   position: absolute;
   inset: 0;
   background-color: #fcdb56;
-  /* z-index: -2; */
+
   opacity: 0.4;
   border-radius: 20px;
   transition: all 400ms ease;
@@ -125,41 +119,12 @@ small {
   cursor: pointer;
 }
 
-/* .counter {
-  counter-reset: myCounter;
-} */
-
-/* .counter > section::before {
-  content: counter(myCounter) '.';
-  counter-increment: myCounter;
-  position: absolute;
-  color: #fcdb56;
-  font-size: 25px;
-  width: 2rem;
-  height: 2rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  left: -2rem;
-  top: 4.5rem;
-}
-
-.dark .counter > section::before {
-  color: #b63f3f;
-} */
-
 .dark .other {
   box-shadow: 0 0px 10px rgba(231, 51, 43, 0.2);
 }
 
-@media screen and (max-width: 800px) {
-  /* .counter > section::before {
-    content: '';
-    color: #f5f5f5;
-    color: #b6cff5;
-    color: #afeeee;
-    color: #f5b7b1;
-    color: #c0c0c0;
-    color: #514949d9;
-  } */
+@media screen and (max-width: 540px) {
+  .description {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
 }

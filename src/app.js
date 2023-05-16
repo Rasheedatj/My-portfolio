@@ -1,6 +1,6 @@
 const hello = document.querySelector('.mode_switch');
 const backToTop = document.querySelector('.back_to_top');
-// const close = document.querySelector('.close');
+
 hello.addEventListener('click', () => {
   document.querySelector('html').classList.toggle('dark');
 
@@ -9,9 +9,11 @@ hello.addEventListener('click', () => {
     light_mode
     </span>`;
   } else {
-    hello.innerHTML = `<span class="material-symbols-outlined">
-  dark_mode
-  </span>`;
+    const darkIcon = `<span class="material-symbols-outlined ">
+    dark_mode
+    </span>`;
+    hello.innerHTML = darkIcon;
+
     console.log('light');
   }
 });
@@ -24,10 +26,6 @@ hamburgerBtn.addEventListener('click', (e) => {
   hamburgerBtn.classList.toggle('open');
   menu.classList.toggle('open');
 });
-
-// close.addEventListener('click', (e) => {
-//   menu.classList.remove('open');
-// });
 
 window.onscroll = () => {
   header.classList.add('active');
