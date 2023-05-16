@@ -9,7 +9,7 @@ hello.addEventListener('click', () => {
     light_mode
     </span>`;
   } else {
-    const darkIcon = `<span class="material-symbols-outlined ">
+    const darkIcon = `<span class="material-symbols-outlined">
     dark_mode
     </span>`;
     hello.innerHTML = darkIcon;

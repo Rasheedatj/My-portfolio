@@ -123,6 +123,10 @@ small {
   box-shadow: 0 0px 10px rgba(231, 51, 43, 0.2);
 }
 
+svg:hover {
+  stroke: #fcdb56;
+}
+
 @media screen and (max-width: 540px) {
   .description {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);

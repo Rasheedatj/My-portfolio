@@ -629,10 +629,6 @@ video {
   bottom: 7rem;
 }
 
-.left-\[3\.3rem\] {
-  left: 3.3rem;
-}
-
 .left-\[3\.5rem\] {
   left: 3.5rem;
 }
@@ -811,10 +807,6 @@ video {
   place-items: center;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
 .items-end {
   align-items: flex-end;
 }
@@ -887,10 +879,6 @@ video {
   border-width: 2px;
 }
 
-.border-\[1px\] {
-  border-width: 1px;
-}
-
 .border-l-\[10px\] {
   border-left-width: 10px;
 }
@@ -898,11 +886,6 @@ video {
 .border-\[\#FCDB56\] {
   --tw-border-opacity: 1;
   border-color: rgb(252 219 86 / var(--tw-border-opacity));
-}
-
-.border-\[\#eee\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(238 238 238 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0a192f\] {
@@ -1047,24 +1030,16 @@ video {
   font-size: 25px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .text-\[20px\] {
   font-size: 20px;
 }
 
-.text-\[17px\] {
-  font-size: 17px;
-}
-
 .text-\[12px\] {
   font-size: 12px;
-}
-
-.text-\[15px\] {
-  font-size: 15px;
 }
 
 .font-\[700\] {
@@ -1089,10 +1064,6 @@ video {
 
 .leading-\[35px\] {
   line-height: 35px;
-}
-
-.leading-\[20px\] {
-  line-height: 20px;
 }
 
 .leading-\[25px\] {
@@ -1296,6 +1267,10 @@ small {
   box-shadow: 0 0px 10px rgba(231, 51, 43, 0.2);
 }
 
+svg:hover {
+  stroke: #fcdb56;
+}
+
 @media screen and (max-width: 540px) {
   .description {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -1320,6 +1295,11 @@ small {
 .hover\:-translate-y-\[10px\]:hover {
   --tw-translate-y: -10px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-\[\#eee\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#FCDB56\]:hover {
@@ -1363,6 +1343,16 @@ small {
 .dark .dark\:bg-\[\#8492b6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(132 146 182 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#6e6969\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 105 105 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:stroke-\[\#8492b6\] {
