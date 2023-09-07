@@ -1,22 +1,23 @@
-const hello = document.querySelector('.mode_switch');
+const toggler = document.querySelector('.mode_switch');
 const backToTop = document.querySelector('.back_to_top');
+const htmlEl = document.querySelector('html');
 
-hello.addEventListener('click', () => {
-  document.querySelector('html').classList.toggle('dark');
-
-  if (document.querySelector('html').classList.contains('dark')) {
-    hello.innerHTML = `<span class="material-symbols-outlined">
-    light_mode
-    </span>`;
+const toggleMode = () => {
+  if (htmlEl.classList.contains('dark')) {
+    htmlEl.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
   } else {
-    const darkIcon = `<span class="material-symbols-outlined">
-    dark_mode
-    </span>`;
-    hello.innerHTML = darkIcon;
-
-    console.log('light');
+    htmlEl.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
   }
-});
+};
+
+function addThemeToStorage() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    htmlEl.classList.add(`${savedTheme}`);
+  }
+}
 
 const hamburgerBtn = document.querySelector('.hamBtn');
 const menu = document.querySelector('.menu');
@@ -38,3 +39,10 @@ window.addEventListener('scroll', function () {
     backToTop.classList.remove('active');
   }
 });
+
+function init() {
+  addThemeToStorage();
+  toggler.addEventListener('click', toggleMode);
+}
+
+document.addEventListener('DOMContentLoaded', init);

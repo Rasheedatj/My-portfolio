@@ -1297,11 +1297,6 @@ svg:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-\[\#eee\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
-}
-
 .hover\:text-\[\#FCDB56\]:hover {
   --tw-text-opacity: 1;
   color: rgb(252 219 86 / var(--tw-text-opacity));
@@ -1335,6 +1330,11 @@ svg:hover {
   background-color: rgb(182 63 63 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-\[\#6e6969\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(110 105 105 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-\[white\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1343,16 +1343,6 @@ svg:hover {
 .dark .dark\:bg-\[\#8492b6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(132 146 182 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[red\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[\#6e6969\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(110 105 105 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:stroke-\[\#8492b6\] {
