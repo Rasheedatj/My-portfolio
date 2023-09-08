@@ -958,6 +958,11 @@ video {
   padding-bottom: .8rem;
 }
 
+.px-\[1\.5rem\] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-\[3rem\] {
   padding-bottom: 3rem;
 }
@@ -1468,6 +1473,22 @@ svg:hover {
 
   .lg\:w-\[15\%\] {
     width: 15%;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .lg\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .lg\:w-\[65\%\] {
+    width: 65%;
   }
 
   .lg\:grid-cols-3 {
