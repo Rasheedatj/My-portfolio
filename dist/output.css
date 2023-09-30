@@ -789,6 +789,26 @@ video {
   width: 2px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[2500px\] {
+  width: 2500px;
+}
+
+.w-\[120\%\] {
+  width: 120%;
+}
+
+.w-\[150\%\] {
+  width: 150%;
+}
+
+.w-\[140\%\] {
+  width: 140%;
+}
+
 .-translate-x-\[100\%\] {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -873,6 +893,10 @@ video {
 
 .gap-\[1rem\] {
   gap: 1rem;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .overflow-x-hidden {
