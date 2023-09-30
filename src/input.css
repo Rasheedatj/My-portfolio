@@ -8,22 +8,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(136, 146, 176, 0.3);
-  border-radius: 2rem;
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  background: #ccd6f6;
-  border-radius: 2rem;
-}
-
 .hamBtn.open span:nth-child(1) {
   transform: rotate(-45deg);
   transition: 300ms ease;
@@ -125,6 +109,22 @@ small {
 
 svg:hover {
   stroke: #fcdb56;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #8892b04d;
+  width: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #ccd6f6;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 540px) {
