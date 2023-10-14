@@ -7,9 +7,7 @@
   "description": "My Portfolio",
   "main": "tailwind.config.js",
   "devDependencies": {},
-  "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  },
+  "scripts": {},
   "author": "Rashedat",
   "license": "MIT"
 }
