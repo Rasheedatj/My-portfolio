@@ -45,6 +45,7 @@ function initSwiper() {
     slidesPerView: 1.2,
     spaceBetween: 10,
     freeMode: true,
+    autoHeight: true,
     pagination: {
       el: '.swiper-pagination',
       dynamicBullets: true,
