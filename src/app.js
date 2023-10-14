@@ -40,9 +40,34 @@ window.addEventListener('scroll', function () {
   }
 });
 
+function initSwiper() {
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    freeMode: true,
+    autoHeight: true,
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      1200: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
+    },
+  });
+}
+
 function init() {
   addThemeToStorage();
   toggler.addEventListener('click', toggleMode);
+  initSwiper();
 }
 
 document.addEventListener('DOMContentLoaded', init);

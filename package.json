@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "tailwindcss": "^3.1.6"
-  }
+  },
+  "name": "y",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "tailwind.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Rashedat",
+  "license": "MIT"
 }

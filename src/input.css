@@ -4,6 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,700&display=swap');
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #8892b04d;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #ccd6f6;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -111,20 +126,17 @@ svg:hover {
   stroke: #fcdb56;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+.swiper-pagination-bullet-active-next {
+  background: #8892b0 !important;
+  opacity: 0.5 !important;
 }
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #8892b04d;
-  width: 10px;
+.swiper-pagination-bullet-active-prev {
+  background: #8892b0 !important;
+  opacity: 0.5 !important;
 }
 
-.dark ::-webkit-scrollbar-thumb {
-  background: #ccd6f6;
-  border-radius: 5px;
+.swiper-slide {
+  height: 100% !important;
 }
 
 @media screen and (max-width: 540px) {
