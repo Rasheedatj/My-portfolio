@@ -139,6 +139,26 @@ svg:hover {
   height: 100% !important;
 }
 
+.nav-menu {
+  counter-reset: number;
+}
+
+.nav-menu > a {
+  counter-increment: number;
+  position: relative;
+  font-size: 14px;
+}
+
+.nav-menu > a::before {
+  content: counter(number) '.';
+  left: -20px;
+  position: absolute;
+  color: #fcdb56;
+}
+.dark .nav-menu > a::before {
+  color: #b63f3f;
+}
+
 @media screen and (max-width: 540px) {
   .description {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);

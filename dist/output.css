@@ -629,10 +629,6 @@ video {
   left: 3.5rem;
 }
 
-.bottom-\[1rem\] {
-  bottom: 1rem;
-}
-
 .z-\[10\] {
   z-index: 10;
 }
@@ -835,16 +831,16 @@ video {
   gap: 30px;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
 .gap-\[7px\] {
   gap: 7px;
 }
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .gap-\[3rem\] {
@@ -861,6 +857,14 @@ video {
 
 .gap-\[1rem\] {
   gap: 1rem;
+}
+
+.gap-\[35px\] {
+  gap: 35px;
+}
+
+.gap-\[4rem\] {
+  gap: 4rem;
 }
 
 .overflow-x-hidden {
@@ -1307,6 +1311,27 @@ svg:hover {
   height: 100% !important;
 }
 
+.nav-menu {
+  counter-reset: number;
+}
+
+.nav-menu > a {
+  counter-increment: number;
+  position: relative;
+  font-size: 14px;
+}
+
+.nav-menu > a::before {
+  content: counter(number) '.';
+  left: -20px;
+  position: absolute;
+  color: #fcdb56;
+}
+
+.dark .nav-menu > a::before {
+  color: #b63f3f;
+}
+
 @media screen and (max-width: 540px) {
   .description {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -1432,10 +1457,6 @@ svg:hover {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:mt-\[5rem\] {
     margin-top: 5rem;
   }
@@ -1524,10 +1545,6 @@ svg:hover {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:\!h-\[42vh\] {
-    height: 42vh !important;
   }
 
   .lg\:w-\[5\%\] {
