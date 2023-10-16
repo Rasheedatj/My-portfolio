@@ -1,0 +1,109 @@
+  <section class="flex flex-row-reverse items-center mt-[5rem]">
+          <!-- img -->
+          <a
+            href="https://godzinu.com"
+            class="hidden lg:block lg:w-[50%] project_img relative"
+          >
+            <img src="./src/Images/godzinu.png" alt="" />
+          </a>
+          <!-- project description -->
+          <div
+            class="lg:w-[50%] lg:pr-[3rem] bg-[#112240] dark:bg-[white] lg:dark:bg-transparent lg:bg-transparent p-[1.5rem] lg:p-0 rounded-[5px] description"
+          >
+            <p class="text-[#FCDB56] dark:text-[#b63f3f] lg:text-[1.5rem]">
+              Project
+            </p>
+            <h1
+              class="capitalize text-[#ccd6f6] dark:text-[#8492b6] text-[25px] md:text-[35px] font-[700] pt-[.5rem] pb-[1.5rem]"
+            >
+              Godzinu
+            </h1>
+
+            <a
+              href="https://flixx-app-bay.vercel.app/"
+              class="block lg:hidden mb-[1rem]"
+            >
+              <img src="./src/Images/godzinu.png" alt="" />
+            </a>
+            <div
+              class="lg:p-[1.5rem] bg-transparent dark:bg-transparent lg:bg-[#112240] lg:dark:bg-[white] rounded-[5px] z-[2] lg:-mr-[5rem] relative lg:dark:border-[1px] lg:dark:border-[#eee]"
+            >
+              <p
+                class="text-[#8892b0] dark:text-[#514949] leading-[25px] lg:w-[90%]"
+              >
+                I worked directly with a designer to revamp the landing page of
+                an NFT and crypto service provider. Framer motion animations and
+                swiper Js Api was used for smooth animation. The twitter and
+                Medium api was used to directly display GODZinu tweets and
+                medium articles on the website.
+              </p>
+            </div>
+
+            <!-- tech used -->
+            <ul class="list-none flex gap-[20px] mt-[2rem]">
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] lg:text-[17px]"
+              >
+                React + vite
+              </li>
+
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] lg:text-[17px]"
+              >
+                Tailwind CSS
+              </li>
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] lg:text-[17px]"
+              >
+                Git
+              </li>
+            </ul>
+
+            <!-- url -->
+            <div class="flex mt-[1.5rem] items-center gap-[1rem]">
+              <a
+                href="https://github.com/Rasheedatj/Godzinu"
+                class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github dark:stroke-[#8492b6] stroke-[#8492b6] w-[25px]"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+                2e
+              </a>
+              <a
+                href="https://godzinu.com"
+                class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ccd6f6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github dark:stroke-[#8492b6] stroke-[#8492b6] w-[25px]"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                2e
+              </a>
+            </div>
+          </div>
+        </section>

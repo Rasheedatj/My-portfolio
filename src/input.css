@@ -159,6 +159,22 @@ svg:hover {
   color: #b63f3f;
 }
 
+.header:after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background-color: #fcdb56;
+  bottom: -10px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.dark .header:after {
+  background-color: #b63f3f;
+}
+
 @media screen and (max-width: 540px) {
   .description {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
