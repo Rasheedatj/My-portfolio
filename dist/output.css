@@ -1080,6 +1080,10 @@ video {
   text-transform: capitalize;
 }
 
+.leading-\[28px\] {
+  line-height: 28px;
+}
+
 .leading-\[35px\] {
   line-height: 35px;
 }
@@ -1094,14 +1098,6 @@ video {
 
 .leading-\[20px\] {
   line-height: 20px;
-}
-
-.leading-\[28px\] {
-  line-height: 28px;
-}
-
-.leading-\[30px\] {
-  line-height: 30px;
 }
 
 .tracking-\[2px\] {
@@ -1198,6 +1194,11 @@ video {
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+  overflow-y: hidden;
+  height: 100vh;
 }
 
 .hamBtn.open span:nth-child(1) {
@@ -1544,12 +1545,12 @@ svg:hover {
     font-size: 18px;
   }
 
-  .md\:leading-\[24px\] {
-    line-height: 24px;
-  }
-
   .md\:leading-\[35px\] {
     line-height: 35px;
+  }
+
+  .md\:leading-\[24px\] {
+    line-height: 24px;
   }
 }
 

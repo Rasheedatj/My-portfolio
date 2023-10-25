@@ -23,6 +23,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.hide {
+  overflow-y: hidden;
+  height: 100vh;
+}
 .hamBtn.open span:nth-child(1) {
   transform: rotate(-45deg);
   transition: 300ms ease;

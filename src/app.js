@@ -26,6 +26,8 @@ const header = document.querySelector('header');
 hamburgerBtn.addEventListener('click', (e) => {
   hamburgerBtn.classList.toggle('open');
   menu.classList.toggle('open');
+  document.querySelector('body').classList.toggle('hide');
+  console.log('object');
 });
 
 window.onscroll = () => {
