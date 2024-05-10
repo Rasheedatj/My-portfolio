@@ -1068,12 +1068,16 @@ video {
   font-weight: 600;
 }
 
-.font-\[200\] {
-  font-weight: 200;
+.font-\[400\] {
+  font-weight: 400;
 }
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-\[200\] {
+  font-weight: 200;
 }
 
 .capitalize {
