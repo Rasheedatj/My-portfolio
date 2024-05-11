@@ -681,6 +681,10 @@ video {
   margin-top: 10rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .block {
   display: block;
 }
@@ -859,6 +863,18 @@ video {
 
 .gap-\[1rem\] {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-x-hidden {
