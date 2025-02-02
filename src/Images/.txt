@@ -1,0 +1,121 @@
+   <section class="flex flex-row-reverse items-center mt-[5rem]">
+          <!-- img -->
+          <a
+            target="_blank"
+            href="https://tracker-fullstack-app.onrender.com/"
+            class="hidden lg:block lg:w-[50%] project_img relative"
+          >
+            <img src="./src/Images/Tracalrie.png" alt="" />
+          </a>
+          <!-- project description -->
+          <div
+            class="lg:w-[50%] lg:pr-[3rem] bg-[#112240] dark:bg-[white] lg:dark:bg-transparent lg:bg-transparent p-[1.5rem] lg:p-0 rounded-[5px] description"
+          >
+            <p class="text-[#FCDB56] dark:text-[#b63f3f] lg:text-[1.5rem]">
+              Project
+            </p>
+            <h1
+              class="capitalize text-[#ccd6f6] dark:text-[#8492b6] text-[25px] md:text-[35px] font-[700] pt-[.5rem] pb-[1.5rem]"
+            >
+              Tracalorie
+            </h1>
+
+            <a
+              target="_blank"
+              href="https://tracker-fullstack-app.onrender.com/"
+              class="block lg:hidden mb-[1rem]"
+            >
+              <img src="./src/Images/Tracalrie.png" alt="" />
+            </a>
+            <div
+              class="lg:p-[1.5rem] bg-transparent dark:bg-transparent lg:bg-[#112240] lg:dark:bg-[white] rounded-[5px] z-[2] lg:-mr-[5rem] relative lg:dark:border-[1px] lg:dark:border-[#eee]"
+            >
+              <p
+                class="text-[#8892b0] dark:text-[#514949] leading-[25px] md:w-[90%]"
+              >
+              Tracalorie is a fullstack application that stores the meals and workout calories of a user in a backend server and render it on the interface. Users are able to add, delete, and update meals and calories. Currently, over 7 people use tracalorie to track thier calories and stay healthy.
+             
+              </p>
+            </div>
+
+            <!-- tech used -->
+            <ul class="list-none  gap-[10px]  mt-[2rem] flex flex-wrap">
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] "
+              >
+               JavaScript
+              </li>
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] "
+              >
+               MongoDB
+              </li>
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] "
+              >
+               Express
+              </li>
+
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] "
+              >
+                Tailwind 
+              </li>
+              <li
+                class="text-[#8892b0] dark:text-[#514949] text-[14px] "
+              >
+                Webpack
+              </li>
+            
+            </ul>
+
+            <!-- url -->
+            <div class="flex mt-[1.5rem] items-center gap-[1rem]">
+              <a
+                target="_blank"
+                href="https://github.com/Rasheedatj/Tracker-Fullstack-App"
+                class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github dark:stroke-[#8492b6] stroke-[#8492b6] w-[20px]"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+                2e
+              </a>
+              <a
+                target="_blank"
+                href="https://tracker-fullstack-app.onrender.com/"
+                class="text-transparent hover:-translate-y-[5px] duration-500 transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ccd6f6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github dark:stroke-[#8492b6] stroke-[#8492b6] w-[20px]"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                2e
+              </a>
+            </div>
+          </div>
+        </section>
