@@ -83,7 +83,6 @@ small {
   bottom: 2rem;
 }
 
-.add_film::after,
 .project_img::after {
   content: '';
   position: absolute;
@@ -95,13 +94,13 @@ small {
   transition: all 400ms ease;
 }
 
-.dark .add_film::after,
 .dark .project_img::after {
   background-color: #c07373;
 }
 .project_img::after {
   border-radius: 0;
 }
+
 .add_film::before {
   content: '';
   position: absolute;
